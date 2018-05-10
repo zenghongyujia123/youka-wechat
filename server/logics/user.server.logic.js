@@ -6,7 +6,6 @@ var smsLib = require('./../../libraries/sms');
 var appDb = mongoose.appDb;
 var User = appDb.model('User');
 var UserPay = appDb.model('UserPay');
-var postcodeLogic = require('../logics/postcode');
 
 var sysErr = require('./../errors/system');
 var agent = require('superagent').agent();

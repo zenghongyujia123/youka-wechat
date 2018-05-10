@@ -5,134 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no,width=device-width" />
 
-  <title>潮钱网</title>
-  <link rel="stylesheet" href="../libs/Swiper/dist/css/swiper.min.css" />
+  <title>优卡</title>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
   <link rel="stylesheet" href="../c_wechat/css/index.client.style.css" />
   <link rel="stylesheet" href="../c_wechat/css/home.client.style.css" />
-  <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
   <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
-  <script src="../libs/Swiper/dist/js/swiper.jquery.min.js"></script>
-  <script src="../c_wechat/controllers/page_native.client.controller.js"></script>
   <script src="../c_wechat/controllers/home.client.controller.js"></script>
 </head>
 
 <body>
-  <div class="page-home">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <a class="swiper-slide" href="javascript:;">
-          <!-- <a class="swiper-slide" href="/page_wechat/banner?img=banner11.jpg"> -->
-          <img src="../c_wechat/images/home/banner00.jpg" />
-        </a>
-
-        <!-- <a class="swiper-slide" href="javascript:;"> -->
-        <!-- <a class="swiper-slide" href="/page_wechat/banner?img=banner13.jpg"> -->
-        <!-- <img src="../c_wechat/images/home/banner02.jpg" /> -->
-        <!-- </a> -->
-
-        <img class="swiper-slide" src="../c_wechat/images/home/banner01.jpg" />
-
-      </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <a href="javascript:;" class="home-apply-btn" onclick="goToWindow('https://qgz.finsphere.cn/register1/?channel=013','我要借款')">
-      我要借款
-    </a>
-    <div class="home-apply-text">小额分期，专属快下渠道</div>
-    <div class="home-bottom">
-      <div class="weui-flex">
-        <div class="weui-flex__item">
-          <a href="javascript:;" class="item left" onclick="goToWindow('/page_wechat/vip_notice','VIP通道')">
-            <img src="../c_wechat/images/home/home_icon_1.png" class="icon"></img>
-            <div class="title">VIP通道</div>
-            <div class="description">专家风控，多资金方100%直接下款，不满意就退费
-            </div>
-          </a>
-        </div>
-        <div class="weui-flex__item">
-          <a href="javascript:;" class="item right" onclick="goToWindow('/page_wechat/question','AI智配')">
-            <img src="../c_wechat/images/home/home_icon_2.png" class="icon"></img>
-            <div class="title">AI智配</div>
-            <div class="description">风控模型，贴合您的需求，科技匹配下款服务</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="home-bottom">
-      <div class="weui-flex">
-        <div class="weui-flex__item">
-          <a href="javascript:;" class="item left" onclick="goToWindow('/page_wechat/paycredit','还信用卡')">
-            <img src="../c_wechat/images/home/home_icon_3.png" class="icon"></img>
-            <div class="title">还信用卡</div>
-            <div class="description">智能还卡，空卡全额代还，无卡取款，超低手续费</div>
-          </a>
-        </div>
-        <!-- <div class="weui-flex__item">
-          <a href="/page_wechat/page_reward" class="item right">
-            <img src="../c_wechat/images/home/home_icon_4.png" class="icon"></img>
-            <div class="title">赏金空间</div>
-            <div class="description">富矿振金区，太空科技带给你的现实财富收获</div>
-          </a>
-        </div> -->
-
-        <div class="weui-flex__item">
-          <a href="https://hd.faisco.cn/16288194/qZAXyu9c7xABnvIuAdqLyw/load.html?style=55" class="item right">
-            <img src="../c_wechat/images/home/home_icon_4.png" class="icon"></img>
-            <div class="title">寻宝空间</div>
-            <div class="description">寻宝小游戏，送额度抽现金，两天一轮，老司机带你嗨</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="page-footer">
-    <a href="/page_wechat/home" class="footer-item select">
-      <img src="../c_wechat/images/index/yen_select.png" class="icon"></img>
-      <div class="title">贷款</div>
-    </a>
-    <a href="javascript:;" class="footer-item 找钱" onclick="goToWindow('/page_wechat/self_home?sort_key=create_time&sort_value=-1','找钱')">
-      <img src="../c_wechat/images/index/shopping.png" class="icon"></img>
-      <div class="title">找钱</div>
-    </a>
-    <a href="javascript:;" onclick="goToWindow('https://www.vzan.com/f/s-1038567','论坛')" class="footer-item">
-      <img src="../c_wechat/images/index/yen.png" class="icon"></img>
-      <div class="title">论坛</div>
-    </a>
-    <!--
-    <a href="https://credit.haodai.com/?ref=hd_11019247" class="footer-item">
-    -->
-    <a href="javascript:;" class="footer-item" onclick="goToWindow('/page_wechat/page_query_main','查询')">
-      <img src="../c_wechat/images/index/wallet.png" class="icon"></img>
-      <div class="title">查询</div>
-    </a>
-    <a href="javascript:;" class="footer-item " onclick="goToWindow('/page_wechat/me','我的')">
-      <img src="../c_wechat/images/index/payment.png" class="icon"></img>
-      <div class="title">我的</div>
-    </a>
-  </div>
+  <div style="text-align: center;line-height: 300px;">三十天连续支付</div>
+  <div href="javascript:;" class="weui-btn weui-btn_primary" style="margin:20px;">支付0.01元</div>
 </body>
 <script>
   $(function () {
-    localStorage.setItem('device', '<%= device  %>');
-    $('.no_open').click(function () {
-      $.alert("即将开放！");
-    });
-
-    apiready = function () {
-      if (api && api.removeLaunchView) {
-        api.removeLaunchView({
-          animation: {
-            type: 'fade',
-            duration: 500
-          }
-        });
-      }
-    }
-
   });
 
 </script>

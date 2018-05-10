@@ -2,13 +2,9 @@
  * Created by zenghong on 2017/8/8.
  */
 var path = require('path');
-var productLogic = require('../logics/product');
 var userLogic = require('../logics/user');
 var wechatNewloigc = require('../logics/wechat_new');
 
-var creditPeopleLogic = require('../logics/credit_people');
-var productFilterloigc = require('../logics/product_filter');
-var provinces = require('../constants/city');
 var cookieLib = require('../../libraries/cookie');
 var cryptoLib = require('../../libraries/crypto');
 var agent = require('superagent').agent();
