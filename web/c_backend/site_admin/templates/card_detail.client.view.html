@@ -1,0 +1,43 @@
+<div class="page-body-view">
+  <div class="page-operation-view" layout="row" layout-align="space-between center">
+    <div layout="row">
+      <p class="title">信用卡详情</p>
+    </div>
+    <div layout="row">
+      <md-button class="md-primary md-raised md-hue-2" id="qiniu-upload-test-card-log-button">上传logo</md-button>
+      <md-button class="md-primary md-raised md-hue-2" ng-click="updateCard($event)">保存</md-button>
+    </div>
+  </div>
+
+  <div class="c-product-detail-view">
+    <md-content layout-padding>
+      <div layout-gt-sm="row">
+        <span>
+          <img class="product-detail-logo" ng-src="{{card.logo}}"></img>
+        </span>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>信用卡名称</label>
+          <input ng-model="card.name" />
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>信用卡描述</label>
+          <input ng-model="card.description" />
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>第三方🔗（http://.....）</label>
+          <input ng-model="card.organization_url" />
+        </md-input-container>
+      </div>
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>标签：如（一元停车,买车优惠）</label>
+          <input ng-model="card.str1" />
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>成功申请人数</label>
+          <input ng-model="card.int5" />
+        </md-input-container>
+      </div>
+    </md-content>
+  </div>
+</div>

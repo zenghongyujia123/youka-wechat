@@ -1,0 +1,38 @@
+<div class="page-body-view">
+  <div class="page-operation-view" layout="row" layout-align="space-between center">
+    <p class="title">销售详情</p>
+    <div layout="row">
+
+      <md-button class="md-primary md-raised md-hue-2" ng-click="update_sold_record()">保存</md-button>
+    </div>
+  </div>
+
+  <div class="list-header">
+    <div class="list-item" layout="row" layout-align="start center">
+      <div class="column-item" flex="">用户名</div>
+      <div class="column-item" flex="">用户姓名</div>
+      <div class="column-item" flex="">用户手机</div>
+      <div class="column-item" flex="">用户支付宝</div>
+      <div class="column-item" flex="">用户地址</div>
+    </div>
+  </div>
+  <div class="list-body">
+    <div class="list-item" layout="row" layout-align="start center" ng-if="user._id">
+      <div class="column-item" flex="">{{user.username}}</div>
+      <div class="column-item" flex="">{{user.real_name}}</div>
+      <div class="column-item" flex="">{{user.real_phone}}</div>
+      <div class="column-item" flex="">{{user.alipay_id}}</div>
+      <div class="column-item" flex="">{{user.adress}}</div>
+    </div>
+  </div>
+
+
+  <md-content layout-padding>
+    <div layout-gt-sm="row">
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>备注</label>
+        <input ng-model="sold_record.admin_descript_1" />
+      </md-input-container>
+    </div>
+  </md-content>
+</div>

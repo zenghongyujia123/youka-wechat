@@ -1,0 +1,51 @@
+<div class="page-body-view">
+  <div class="page-operation-view" layout="row" layout-align="space-between center">
+    <p class="title">VIP用户报告</p>
+    <div layout="row">
+      <md-button class="md-primary md-raised md-hue-2" ng-click="updateVipReportInfo()">保存</md-button>
+    </div>
+  </div>
+  <md-content layout-padding>
+    <div>基本信息</div>
+    <div layout-gt-sm="row">
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>姓名</label>
+        <input ng-model="user.vip_report.str1" />
+      </md-input-container>
+    </div>
+  </md-content>
+  <md-content layout-padding>
+    <div>粗略评估结果</div>
+    <div layout-gt-sm="row">
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>风险评估指数</label>
+        <input ng-model="user.vip_report.str6" />
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>多头借贷风险</label>
+        <input ng-model="user.vip_report.str7" />
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>社交风险</label>
+        <input ng-model="user.vip_report.str8" />
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>交叉印证</label>
+        <input ng-model="user.vip_report.str9" />
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>黑名单命中</label>
+        <input ng-model="user.vip_report.str10" />
+      </md-input-container>
+    </div>
+  </md-content>
+  <md-content layout-padding>
+    <div>官方报告</div>
+    <div layout-gt-sm="row">
+      <md-input-container class="md-block" flex-gt-sm>
+        <label>官方报告（|分隔段落）</label>
+        <input ng-model="user.vip_report.str29" />
+      </md-input-container>
+    </div>
+  </md-content>
+</div>

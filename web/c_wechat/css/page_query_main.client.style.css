@@ -1,0 +1,96 @@
+body {
+  -webkit-overflow-scrolling: touch;
+  background-color: #f2f2f2;
+}
+.weui-panel__hd::after {
+  border: 0px;
+}
+.weui-grid__icon {
+  width: 50px;
+  height: 50px;
+}
+.weui-grid__icon .big-data-icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 90px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+}
+.weui-grid__icon .big-data-icon.orange {
+  background-color: #fe7e30;
+}
+.weui-grid__icon .big-data-icon.blue {
+  background-color: #6fadfd;
+}
+.weui-grid__icon .big-data-icon.green {
+  background-color: #21c198;
+}
+.weui-grid__icon .big-data-icon.purple {
+  background-color: #9966e0;
+}
+.weui-grid__icon .big-data-icon.red {
+  background-color: #fa5e76;
+}
+.weui-grid__icon .big-data-icon.black {
+  background-color: #686662;
+}
+.weui-media-box_appmsg .weui-media-box__hd {
+  height: 140px;
+  width: 140px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.weui-media-box_appmsg .weui-media-box__hd img {
+  vertical-align: middle;
+  max-height: 110px;
+  max-width: 140px;
+  width: auto;
+}
+.weui-media-box_appmsg .weui-media-box__bd {
+  text-align: center;
+}
+.weui-media-box_appmsg .weui-media-box__bd .title {
+  color: #fe6301;
+}
+.weui-media-box_appmsg .weui-media-box__bd .tip {
+  color: #6fadfd;
+  line-height: 40px;
+}
+.weui-media-box_appmsg .weui-media-box__bd .btn {
+  background-color: #fe6301;
+  color: white;
+  line-height: 40px;
+  border-radius: 35px;
+  text-align: center;
+}
+.weui-popup__modal {
+  background-color: white;
+}
+.weui-popup__modal .title {
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.weui-popup__modal .text {
+  padding: 5px 10px;
+}
+.weui-popup__modal .btn {
+  margin: 20px;
+  display: block;
+  background-color: #fe6301;
+  color: white;
+  line-height: 40px;
+  border-radius: 35px;
+  text-align: center;
+}
+.weui-grids {
+  position: relative;
+}
+.weui-grids .hot-icon {
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
