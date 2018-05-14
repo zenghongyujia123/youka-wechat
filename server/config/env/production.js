@@ -2,6 +2,8 @@
 
 module.exports = {
   env: 'production',
+  appDb: 'mongodb://localhost/p-dev',
+  port: process.env.PORT || 80,
   // appDb: 'mongodb://elina:Social2016@10.117.194.50:27017/z-pro',
   // newAppDb: 'mongodb://elina:Social2016@10.117.194.50:27017/z-new-pro',
   // mapDb: 'mongodb://elina:Social2016@10.117.64.54:27017/z-map-pro',
