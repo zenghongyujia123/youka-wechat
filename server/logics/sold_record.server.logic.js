@@ -18,6 +18,15 @@ exports.soldRecordListByCondition = function (condition, sort, callback) {
   });//.sort(sort);
 }
 
+exports.pay_record_list = function (callback) {
+  SoldRecord.find({}).sort({create_time:-1}).exec( function (err, sold_records) {
+    if (err) {
+      return callback({ err: sysErr.database_query_error });
+    }
+    return callback(null, sold_records);
+  });//.sort(sort);
+}
+
 exports.get_by_id = function (info, callback) {
   SoldRecord.findOne({ _id: info.detail_id }, function (err, result) {
     if (err) {

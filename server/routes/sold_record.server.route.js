@@ -14,6 +14,7 @@ module.exports = function (app) {
 
   app.route('/sold_record/get_by_id').post(soldRecordController.get_by_id);
   app.route('/sold_record/update_sold_record').post(soldRecordController.update_sold_record);
+  app.route('/sold_record/pay_record_list').post(soldRecordController.pay_record_list);
   
  // app.route('/sold_record/recordDetail').post(soldRecordFilter.requireSoldRecord,soldRecordController.recordDetail);
 };

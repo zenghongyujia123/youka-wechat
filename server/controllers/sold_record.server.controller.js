@@ -54,6 +54,16 @@ exports.soldRecordListByCondition = function (req, res, next) {
   });
 }
 
+exports.pay_record_list = function (req, res, next) {
+  soldRecord.pay_record_list(function (err, result) {
+    if (err) {
+      return next(err);
+    }
+    req.data = result;
+    return next();
+  });
+}
+
 /**
 
 
