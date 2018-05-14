@@ -71,14 +71,6 @@ exports.getUserJsApiTicket = function (req, res, next) {
 
 
 exports.get_pre_pay_id = function (req, res, next) {
-  var user = req.user;
-  var price, product;
-  var detail = {
-    pay_price: '',
-    pay_title: '',
-    pay_type: '',
-    user_id: user._id.toString()
-  };
 
   // if (req.body.pay_type === 'vip_pay') {
   //   detail.pay_price = 29900;
@@ -119,7 +111,8 @@ exports.get_pre_pay_id = function (req, res, next) {
   //   return res.send({ err: { type: 'invalid_pay_type', message: '支付类型无效，请联系管理员！' } });
   // }
 
-  wechatNewloigc.get_pre_pay_id(req, detail, user.openid, function (err, result) {
+
+  wechatNewloigc.get_pre_pay_id(req, {}, req.cookies.openid, function (err, result) {
     if (err) {
       return res.send(err);
     }
