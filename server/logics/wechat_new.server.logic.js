@@ -119,7 +119,6 @@ setInterval(function () {
 that.getAccessToken(function () {
   console.log(new Date(), 'get access token ,', access_token);
 });
-
 exports.get_pre_pay_id = function (req, detail, openid, callback) {
   // console.log('test  pay tEST ===============>');
 
