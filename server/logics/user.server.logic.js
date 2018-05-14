@@ -295,79 +295,13 @@ exports.updateVipPayedByOpenid = function (openid, info, callback) {
     if (userPay) {
       return callback();
     }
-    // var real_name = ((user.real_name != '') ? user.real_name : user.wechat_info.nickname);
     userPay = new UserPay({
-      // type: info.attach,
-      // user_id: user._id,
-      // user_phone: user.username,
-      // user_real_name: user.wechat_info.nickname,
       content: info
     });
     userPay.save(function () {
       return callback();
-
-      // if (info.attach === 'vip_pay' || info.attach === 'postcode_pay') {
-      //   user[info.attach + 'ed'] = true;
-      //   user[info.attach + 'ed_time'] = new Date();
-
-      //   if (info.attach === 'postcode_pay') {
-      //     postcodeLogic.update_status(user, function (err, result) {
-      //       console.log('postcode bind err----', err);
-      //       console.log('postcode bind result----', result);
-      //     });
-      //     smsLib.sendPostCodePaySuccess(user.username, function () { });
-      //   }
-      // }
-
-      // if (info.attach === 'pos_suixingfu' || info.attach === 'pos_xinguodu') {
-      //   smsLib.sendPostMachinePaySuccess(user.username, function () { });
-      // }
-
     })
   });
-
-  // User.findOne({ openid: openid }, function (err, user) {
-  //   if (!user) {
-  //     return callback();
-  //   }
-
-  //   UserPay.findOne({ 'content.transaction_id': info.transaction_id }, function (err, userPay) {
-  //     if (userPay) {
-  //       return callback();
-  //     }
-  //     var real_name = ((user.real_name != '') ? user.real_name : user.wechat_info.nickname);
-  //     userPay = new UserPay({
-  //       // type: info.attach,
-  //       // user_id: user._id,
-  //       // user_phone: user.username,
-  //       // user_real_name: user.wechat_info.nickname,
-  //       content: info
-  //     });
-  //     userPay.save(function () {
-  //       // if (info.attach === 'vip_pay' || info.attach === 'postcode_pay') {
-  //       //   user[info.attach + 'ed'] = true;
-  //       //   user[info.attach + 'ed_time'] = new Date();
-
-  //       //   if (info.attach === 'postcode_pay') {
-  //       //     postcodeLogic.update_status(user, function (err, result) {
-  //       //       console.log('postcode bind err----', err);
-  //       //       console.log('postcode bind result----', result);
-  //       //     });
-  //       //     smsLib.sendPostCodePaySuccess(user.username, function () { });
-  //       //   }
-  //       // }
-
-  //       // if (info.attach === 'pos_suixingfu' || info.attach === 'pos_xinguodu') {
-  //       //   smsLib.sendPostMachinePaySuccess(user.username, function () { });
-  //       // }
-  //       user.save(function (err) {
-  //         return callback();
-  //       });
-  //     })
-  //   });
-
-
-  // });
 }
 
 exports.updateUserAuth2 = function (user, callback) {

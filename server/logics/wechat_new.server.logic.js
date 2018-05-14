@@ -137,7 +137,7 @@ exports.get_pre_pay_id = function (req, detail, openid, callback) {
       total_fee: 1,
       openid: openid,
       spbill_create_ip: getClientIp(req),
-      notify_url: 'http://www.zzuka.com.cn/notify_url',
+      notify_url: 'http://www.zzuka.com.cn/page_wechat/notify_url',
       trade_type: 'JSAPI',
     }
   };
