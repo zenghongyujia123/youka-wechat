@@ -125,7 +125,7 @@ exports.get_pre_pay_id = function (req, detail, openid, callback) {
   var jsonInfo = {
     xml: {
       appid: appid,
-      mch_id: mch_id,
+      mch_id: '147558250',
       device_info: 'web',
       nonce_str: new Date().getTime().toString(),
       sign_type: 'MD5',
