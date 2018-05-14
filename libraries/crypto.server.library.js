@@ -3,7 +3,7 @@
 var crypto = require('crypto');
 
 exports.toMd5 = function (str) {
-  return crypto.createHash('md5').update(str).digest('hex');
+  return crypto.createHash('md5').update(str,'utf8').digest('hex');
 };
 
 exports.toSHA1 = function (str) {
