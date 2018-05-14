@@ -43,7 +43,7 @@ exports.notify_url = function (req, res, next) {
     transaction_id: req.body.xml.transaction_id[0]
   }
   if (info && info.result_code == 'SUCCESS') {
-    userLogic.updateVipPayedByOpenid(req.body.xml.openid[0], info, function () {
+    userLogic.updateVipPayedByOpenid(info.openid, info, function () {
     });
   }
 
@@ -80,44 +80,44 @@ exports.get_pre_pay_id = function (req, res, next) {
     user_id: user._id.toString()
   };
 
-  if (req.body.pay_type === 'vip_pay') {
-    detail.pay_price = 29900;
-    detail.pay_title = '潮钱网充值中心-会员充值';
-    detail.pay_type = 'vip_pay';
-  }
-  else if (req.body.pay_type === 'query_大数据') {
-    detail.pay_price = 990;
-    detail.pay_title = '潮钱网充值中心-网贷成功率查询';
-    detail.pay_type = 'query_大数据';
-  }
-  else if (req.body.pay_type === 'query_黑中介') {
-    detail.pay_price = 99;
-    detail.pay_title = '潮钱网充值中心-网贷黑中介查询';
-    detail.pay_type = 'query_黑中介';
-  }
-  else if (req.body.pay_type === 'query_黑灰行为') {
-    detail.pay_price = 990;
-    detail.pay_title = '潮钱网充值中心-网贷黑灰行为查询'
-    detail.pay_type = 'query_黑灰行为';
-  }
-  else if (req.body.pay_type === 'postcode_pay') {
-    detail.pay_price = 6900;
-    detail.pay_title = '潮钱网充值中心-激活码'
-    detail.pay_type = 'postcode_pay';
-  }
-  else if (req.body.pay_type === 'pos_suixingfu') {
-    detail.pay_price = 12000;//12000
-    detail.pay_title = '潮钱网充值中心-随行付刷卡机'
-    detail.pay_type = 'pos_suixingfu';
-  }
-  else if (req.body.pay_type === 'pos_xinguodu') {
-    detail.pay_price = 39900;//39900
-    detail.pay_title = '潮钱网充值中心-新国都刷卡机'
-    detail.pay_type = 'pos_xinguodu';
-  }
-  else {
-    return res.send({ err: { type: 'invalid_pay_type', message: '支付类型无效，请联系管理员！' } });
-  }
+  // if (req.body.pay_type === 'vip_pay') {
+  //   detail.pay_price = 29900;
+  //   detail.pay_title = '潮钱网充值中心-会员充值';
+  //   detail.pay_type = 'vip_pay';
+  // }
+  // else if (req.body.pay_type === 'query_大数据') {
+  //   detail.pay_price = 990;
+  //   detail.pay_title = '潮钱网充值中心-网贷成功率查询';
+  //   detail.pay_type = 'query_大数据';
+  // }
+  // else if (req.body.pay_type === 'query_黑中介') {
+  //   detail.pay_price = 99;
+  //   detail.pay_title = '潮钱网充值中心-网贷黑中介查询';
+  //   detail.pay_type = 'query_黑中介';
+  // }
+  // else if (req.body.pay_type === 'query_黑灰行为') {
+  //   detail.pay_price = 990;
+  //   detail.pay_title = '潮钱网充值中心-网贷黑灰行为查询'
+  //   detail.pay_type = 'query_黑灰行为';
+  // }
+  // else if (req.body.pay_type === 'postcode_pay') {
+  //   detail.pay_price = 6900;
+  //   detail.pay_title = '潮钱网充值中心-激活码'
+  //   detail.pay_type = 'postcode_pay';
+  // }
+  // else if (req.body.pay_type === 'pos_suixingfu') {
+  //   detail.pay_price = 12000;//12000
+  //   detail.pay_title = '潮钱网充值中心-随行付刷卡机'
+  //   detail.pay_type = 'pos_suixingfu';
+  // }
+  // else if (req.body.pay_type === 'pos_xinguodu') {
+  //   detail.pay_price = 39900;//39900
+  //   detail.pay_title = '潮钱网充值中心-新国都刷卡机'
+  //   detail.pay_type = 'pos_xinguodu';
+  // }
+  // else {
+  //   return res.send({ err: { type: 'invalid_pay_type', message: '支付类型无效，请联系管理员！' } });
+  // }
 
   wechatNewloigc.get_pre_pay_id(req, detail, user.openid, function (err, result) {
     if (err) {

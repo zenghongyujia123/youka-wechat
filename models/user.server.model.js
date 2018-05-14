@@ -298,24 +298,24 @@ module.exports = function (appDb) {
     },
     type: {
       type: String,
-      enum: ['vip_pay', 'postcode_pay', 'pos_suixingfu', 'pos_xinguodu', 'credit198_pay', 'query_大数据', 'query_黑灰行为', 'query_黑中介']
+      // enum: ['vip_pay', 'postcode_pay', 'pos_suixingfu', 'pos_xinguodu', 'credit198_pay', 'query_大数据', 'query_黑灰行为', 'query_黑中介']
     },
-    user_id: {
-      type: String,
-    },
-    user_real_name: {
-      type: String,
-    },
-    user_bank_number: {
-      type: String,
-    },
-    user_phone: {
-      type: String,
-    },
-    admin_descript_1: {
-      type: String,
-      default: ''
-    },
+    // user_id: {
+    //   type: String,
+    // },
+    // user_real_name: {
+    //   type: String,
+    // },
+    // user_bank_number: {
+    //   type: String,
+    // },
+    // user_phone: {
+    //   type: String,
+    // },
+    // admin_descript_1: {
+    //   type: String,
+    //   default: ''
+    // },
     content: {
       type: Schema.Types.Mixed
     }

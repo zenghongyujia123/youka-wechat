@@ -46,7 +46,7 @@ module.exports = function (app) {
   // app.route('/page_wechat/self_jietiao').get(userFilter.requireUser, index.self_jietiao);
   // app.route('/page_wechat/self_local').get(userFilter.requireUser, index.self_local);
   // app.route('/page_wechat/credit_people_detail').get(userFilter.requireUser, creditPeopleFilter.requireCreditPeople, index.credit_people_detail);
-  // app.route('/page_wechat/notify_url').post(payController.notify_url);
+  app.route('/page_wechat/notify_url').post(payController.notify_url);
   // app.route('/page_wechat/token_verify').get(userFilter.requireUser, payController.token_verify);
 
   // app.route('/page_wechat/banner').get(index.banner);
