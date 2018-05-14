@@ -11,10 +11,12 @@ var ticket = '';
 var userLogic = require('./user.server.logic');
 
 
-var appid = 'wxf567e44e19240ae3';
-var sk = 'fe0fad0d4eb9cedec995dbea06bd2f3b';
-var pay_sk = 'kskjlskejki23456789kkksdjj22jjjj';
-var mch_id = '1447454002';
+var appid = 'wx905266c0a9b5a255';//优卡
+var sk = '82c99c00e795e15621e376cc23123175';//优卡
+
+var pay_sk = 'sdfgdsssaaaeeeeeedcsesawdsdesawa';//优卡
+
+var mch_id = '1475582502';//优卡
 
 var xml2js = require('xml2js');
 var parseString = xml2js.parseString;
