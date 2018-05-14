@@ -10,9 +10,8 @@ var access_token = '';
 var ticket = '';
 var userLogic = require('./user.server.logic');
 
-
 var appid = 'wx905266c0a9b5a255';//优卡
-var sk = '82c99c00e795e15621e376cc23123175';//优卡
+var sk = '95d36351f3281bc0b6c2f569b8155ce8';//优卡
 
 var pay_sk = 'sdfgdsssaaaeeeeeedcsesawdsdesawa';//优卡
 
