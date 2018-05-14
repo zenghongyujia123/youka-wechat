@@ -2,7 +2,7 @@
 
 module.exports = {
   env: 'production',
-  appDb: 'mongodb://localhost/p-dev',
+  appDb: 'mongodb://localhost/y-pro',
   port: process.env.PORT || 80,
   // appDb: 'mongodb://elina:Social2016@10.117.194.50:27017/z-pro',
   // newAppDb: 'mongodb://elina:Social2016@10.117.194.50:27017/z-new-pro',

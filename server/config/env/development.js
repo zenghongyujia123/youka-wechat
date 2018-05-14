@@ -2,7 +2,7 @@
 
 module.exports = {
   env: 'development',
-  appDb: 'mongodb://localhost/c-dev',
+  appDb: 'mongodb://localhost/y-dev',
   port: process.env.PORT || 5002,
   // newAppDb: 'mongodb://localhost/z-new-dev',
   // mapDb: 'mongodb://localhost/z-dev',

@@ -295,7 +295,7 @@ exports.updateVipPayedByOpenid = function (openid, info, callback) {
     if (userPay) {
       return callback();
     }
-    var real_name = ((user.real_name != '') ? user.real_name : user.wechat_info.nickname);
+    // var real_name = ((user.real_name != '') ? user.real_name : user.wechat_info.nickname);
     userPay = new UserPay({
       // type: info.attach,
       // user_id: user._id,
